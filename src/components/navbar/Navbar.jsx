@@ -4,6 +4,7 @@ import "./navbar.css";
 import logo from "../../assets/logo.svg";
 
 const Menu = () => {
+  return(
   <>
     <p>
       <a href="#home">Home</a>
@@ -20,7 +21,8 @@ const Menu = () => {
     <p>
       <a href="#blog">Library</a>
     </p>
-  </>;
+  </>
+  )
 };
 
 const Navbar = () => {
@@ -55,7 +57,7 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="gpt3__navnar-menu_container scale-up-center">
+          <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
               <Menu />
               <div className="gpt3__navbar-menu_container-links-sign">
